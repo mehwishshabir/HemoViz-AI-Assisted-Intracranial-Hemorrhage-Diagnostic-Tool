@@ -18,7 +18,7 @@ The following diagram illustrates the HemoViz pipeline, from initial 3D CT uploa
 ### 📺 Video Demonstration
 For a full walkthrough of the HemoViz application and its live interface, please view the demonstration via the link below:
 
-🔗 **[Watch the HemoViz Project Demonstration (Google Drive)]([PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE](https://drive.google.com/file/d/1T5MENvdzGeAIEkYY-W8p1vRstWTWjJQl/view?usp=sharing)**
+🔗 **[Watch the HemoViz Project Demonstration][Click Here](https://drive.google.com/file/d/1T5MENvdzGeAIEkYY-W8p1vRstWTWjJQl/view?usp=sharing)**
 
 ---
 
