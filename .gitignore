@@ -1,0 +1,33 @@
+# === HemoViz Private Research Data ===
+# Ignore the core model weights and architecture
+model/
+*.h5
+*.pt
+*.pkl
+*.weights
+
+# Ignore patient data and reference scans
+uploads/
+references/
+*.nii.gz
+*.csv
+*.xlsx
+*.dcm
+
+# === System & Environment Files ===
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# === Application Logs ===
+*.log
