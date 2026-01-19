@@ -1,5 +1,5 @@
 # HemoViz: AI-Assisted Intracranial Hemorrhage Diagnostic Tool
-**MS Thesis Project | Bioinformatics & Medical Deep Learning**
+**MS Thesis Project**
 
 ---
 
@@ -10,34 +10,35 @@ This repository showcases the **HemoViz Web Interface** and the **System Archite
 
 ---
 
-## 📊 Project Presentation & Demonstration
-Since this project involves unpublished MS Thesis research, the full methodology and application walkthrough are consolidated into a professional presentation.
+## 📊 System Workflow & Demonstration
+The following diagram illustrates the HemoViz pipeline, from initial 3D CT upload to final clinical protocol generation.
 
-* 📄 **[View HemoViz Project Presentation (PDF)](HemoViz_Presentation.pdf)**
-  * *Slide 1: Technical Workflow and Architectural Pipeline*
-  * *Slide 2: System Demonstration (Includes Link to Google Drive Video)*
+![HemoViz Workflow Overview](Web_Interface_HemoViz_Overview.jpg)
 
-> **Note:** Open the PDF to access the interactive video link. The demonstration shows the transition from 3D CT upload to final clinical protocol generation.
+### 📺 Video Demonstration
+For a full walkthrough of the HemoViz application and its live interface, please view the demonstration via the link below:
+
+🔗 **[Watch the HemoViz Project Demonstration (Google Drive)](PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE)**
 
 ---
 
-## 🛠 Technical Workflow
-The HemoViz protocol follows a modular architecture:
+## 🛠 Technical Architecture
+The HemoViz protocol follows a modular deep learning architecture:
 
-1. **Preprocessing & Input Handling:** Automated DICOM to NIfTI conversion and intensity normalization.
-2. **3D CNN Classification:** A binary classifier that screens for hemorrhagic vs. normal scans with a confidence threshold > 0.5.
-3. **3D Segmentation (V-Net):** High-fidelity segmentation of bleeding regions to determine volume and location.
-4. **Categorization Engine:** Classifies hemorrhages as **Intra-Axial**, **Extra-Axial**, or **Both** to guide clinical protocols.
+1. **Preprocessing & Input Handling:** Automated DICOM to NIfTI conversion, intensity normalization, and volume reshaping.
+2. **3D CNN Classification:** A binary classifier that screens for hemorrhagic vs. normal scans (Confidence threshold > 0.5).
+3. **3D Segmentation (V-Net):** High-fidelity voxel-wise segmentation of bleeding regions to determine volume and anatomical location.
+4. **Categorization Engine:** Automated classification of hemorrhages into **Intra-Axial**, **Extra-Axial**, or **Both** to guide standardized clinical protocols.
 
 ---
 
 ## 📂 Repository Structure
 ```text
 HemoViz-AI-Assisted-Intracranial-Hemorrhage-Diagnostic-Tool/
-├── assets/                  # CSS styling for interface and workflow images
+├── assets/                  # CSS styling for interface and system assets
 ├── interface/               # UI/Web application code (unified_app.py)
 ├── utils/                   # DICOM processing and helper functions
-├── .gitignore               # Configured to protect models and data
+├── .gitignore               # Configured to protect proprietary models and data
 ├── LICENSE                  # CC BY-NC-ND 4.0
-├── README.md                # Project documentation
-└── HemoViz_Presentation.pdf # Presentation with embedded demo link
+├── Web_Interface_HemoViz_Overview.jpg # System workflow diagram
+└── README.md                # Project documentation
